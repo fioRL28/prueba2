@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - JEMA General Multiservices</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="info">
+                <span><img src="../img/home.png" alt="Imagen de casa"> Cajamarca, Perú</span>
+                <span><img src="../img/phone.png" alt="Imagen de teléfono"> (+51) 917-069702</span>
+                <span>
+                    <img src="/img/correo.png" alt="Imagen de correo"> 
+                    <a href="mailto:jemageneralmultiservices@gmail.com">jemageneralmultiservices@gmail.com</a>
+                </span>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+
+        <div class="container2">
+            <nav class="nav-bar">
+                <div class="nav-container">
+                    <div class="logo">
+                        <img src="/img/logo.png" alt="Logo de la empresa">
+                    </div>
+                    <ul class="menu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#">Ingeniería y Construcción</a></li>
+                        <li><a href="#">Alquiler de Equipos</a></li>
+                        <li><a href="#">Telecomunicaciones</a></li>
+                        <li><a href="#">Expedientes Técnicos</a></li>
+                        <li><a href="#">Saneamiento Ambiental</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                    <a href="/certificado/certificado.html" class="cta-button">Consulta de Certificados</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <form action="https://formsubmit.co/fiorerrojas28@gmail.com" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+        
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ej: usuario@email.com">
+        
+            <label for="celular">Celular:</label>
+            <input type="tel" id="celular" name="celular" pattern="[0-9]{9}" required placeholder="Ej: 987654321">
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+        
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© <span id="year"></span> JEMA General Multiservices. Todos los derechos reservados.</p>
+            <script>
+                document.getElementById("year").textContent = new Date().getFullYear();
+            </script>
+
+        </div>
+    </footer>
+
+</body>
+</html>
